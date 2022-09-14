@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagination</title>
+    <style>
+      body {
+        margin: 50px;
+      }
+      .container {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+      }
+      .number::before {
+      }
+      .number:hover {
+        border: 1px solid #000;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .number:active {
+        border: 1px solid #000;
+        border-radius: 50%;
+        color: white;
+        cursor: pointer;
+        background-color: #000;
+      }
+      .number {
+        text-decoration: none;
+      }
+      div .number:hover {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px;
+      }
+      .icon {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </div>
+      <div><a href="pagination.html" class="number">1</a></div>
+      <a href="#" class="number"> 2 </a>
+      <a href="#" class="number">3</a>
+      <a href="#" class="number">4</a>
+      <a href="#" class="number">5</a>
+      <a href="#" class="number">6</a>
+      <span>...</span>
+      <a href="#" class="number">23</a>
+      <div class="arrow">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
